@@ -1,7 +1,7 @@
 import React from 'react';
 import CreateChannelModal from './createchannelmodal';
 import CreateChannelButton from './createchannelbutton';
-
+import Heading from './heading';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,10 +25,7 @@ class App extends React.Component {
           closeModal={this.toggleModal}
           visible={isModalOpen} />
         <div className="col channel-wrapper">
-          <div className="channel-heading">
-            <strong>Wave</strong>
-            <img className="wave-svg" src="./images/wave4.svg"></img>
-          </div>
+          <Heading />
           {/* <SearchChannels/>
           <ChannelList /> */}
           <CreateChannelButton
